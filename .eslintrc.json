@@ -1,7 +1,17 @@
 {
   "root": true,
-  "env": { "browser": true, "node": true, "es2022": true },
-  "plugins": ["@typescript-eslint", "import", "sonarjs", "unicorn"],
+  "env": {
+    "browser": true,
+    "node": true,
+    "es2022": true
+  },
+  "plugins": [
+    "@typescript-eslint",
+    "import",
+    "sonarjs",
+    "unicorn",
+    "jest-extended"
+  ],
   "extends": [
     "airbnb",
     "airbnb-typescript",
@@ -34,7 +44,10 @@
     "import/no-extraneous-dependencies": "off",
     "import/prefer-default-export": "off",
     "import/no-default-export": "error",
-    "import/no-unresolved": "error"
+    "import/no-unresolved": "error",
+    "allowForLoopAfterthoughts": true,
+    "jest-extended/prefer-to-be-true": "warn",
+    "jest-extended/prefer-to-be-false": "error"
   },
   "settings": {
     "import/parsers": {

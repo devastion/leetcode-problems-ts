@@ -1,0 +1,22 @@
+{
+  "name": "leetcode-problems-ts",
+  "description": "My solutions to leetcode problems written in typescript.",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/devastion/leetcode-problems-ts.git"
+  },
+  "keywords": [
+    "leetcode",
+    "problems",
+    "solutions"
+  ],
+  "author": "Dimitar Banev",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/devastion/leetcode-problems-ts/issues"
+  },
+  "homepage": "https://github.com/devastion/leetcode-problems-ts#readme"
+}

@@ -1,8 +1,12 @@
 {
   "name": "leetcode-problems-ts",
   "description": "My solutions to leetcode problems written in typescript.",
+  "private": true,
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "nodemon src/index.ts",
+    "test": "jest --watch",
+    "format": "prettier -uw --cache . && git update-index --again",
+    "lint": "eslint --cache --fix --ext .ts src"
   },
   "repository": {
     "type": "git",
@@ -18,5 +22,25 @@
   "bugs": {
     "url": "https://github.com/devastion/leetcode-problems-ts/issues"
   },
-  "homepage": "https://github.com/devastion/leetcode-problems-ts#readme"
+  "homepage": "https://github.com/devastion/leetcode-problems-ts#readme",
+  "devDependencies": {
+    "@types/jest": "^29.5.0",
+    "@typescript-eslint/eslint-plugin": "^5.57.1",
+    "@typescript-eslint/parser": "^5.57.1",
+    "eslint": "^8.37.0",
+    "eslint-config-airbnb": "^19.0.4",
+    "eslint-config-airbnb-typescript": "^17.0.0",
+    "eslint-config-prettier": "^8.8.0",
+    "eslint-import-resolver-typescript": "^3.5.5",
+    "eslint-plugin-import": "^2.27.5",
+    "eslint-plugin-jest": "^27.2.1",
+    "eslint-plugin-sonarjs": "^0.19.0",
+    "eslint-plugin-unicorn": "^46.0.0",
+    "jest": "^29.5.0",
+    "nodemon": "^2.0.22",
+    "prettier": "^2.8.7",
+    "ts-jest": "^29.1.0",
+    "ts-node": "^10.9.1",
+    "typescript": "^5.0.3"
+  }
 }

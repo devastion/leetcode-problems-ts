@@ -1,0 +1,76 @@
+{
+  "root": true,
+  "env": { "browser": true, "node": true, "es2022": true },
+  "plugins": ["@typescript-eslint", "import", "sonarjs", "unicorn"],
+  "extends": [
+    "airbnb",
+    "airbnb-typescript",
+    "plugin:@typescript-eslint/recommended",
+    "plugin:@typescript-eslint/recommended-requiring-type-checking",
+    "plugin:@typescript-eslint/strict",
+    "plugin:sonarjs/recommended",
+    "plugin:unicorn/recommended",
+    "prettier"
+  ],
+  "parser": "@typescript-eslint/parser",
+  "parserOptions": {
+    "ecmaVersion": "latest",
+    "sourceType": "module",
+    "project": "./tsconfig.json"
+  },
+  "rules": {
+    "unicorn/filename-case": [
+      "error",
+      {
+        "cases": {
+          "camelCase": true,
+          "pascalCase": true,
+          "kebabCase": true
+        }
+      }
+    ],
+    "unicorn/prevent-abbreviations": "off",
+    "unicorn/no-array-for-each": "error",
+    "import/no-extraneous-dependencies": "off",
+    "import/prefer-default-export": "off",
+    "import/no-default-export": "error",
+    "import/no-unresolved": "error"
+  },
+  "settings": {
+    "import/parsers": {
+      "@typescript-eslint/parser": [".ts"]
+    },
+    "import/resolver": {
+      "typescript": {
+        "project": "./tsconfig.json",
+        "alwaysTryTypes": true
+      }
+    }
+  },
+  "overrides": [
+    {
+      "files": ["./src/**/*.test.ts"],
+      "extends": ["plugin:jest/recommended", "plugin:jest/style"],
+      "plugins": ["jest"],
+      "rules": {
+        "jest/no-disabled-tests": "warn",
+        "jest/no-focused-tests": "error",
+        "jest/no-identical-title": "error",
+        "jest/prefer-to-have-length": "warn",
+        "jest/valid-expect": "error"
+        // "jest-dom/prefer-checked": "error",
+        // "jest-dom/prefer-enabled-disabled": "error",
+        // "jest-dom/prefer-required": "error",
+        // "jest-dom/prefer-to-have-attribute": "error",
+        // "testing-library/await-async-query": "error",
+        // "testing-library/no-await-sync-query": "error",
+        // "testing-library/no-debugging-utils": "warn",
+        // "testing-library/no-dom-import": "off"
+      },
+      "env": {
+        "jest/globals": true
+      }
+    }
+  ],
+  "ignorePatterns": ["node_modules", "*.config.*", "*.setup.*"]
+}

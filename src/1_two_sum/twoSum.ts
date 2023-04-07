@@ -7,12 +7,7 @@
  * You can return the answer in any order.
  */
 
-// TODO: Make it less than O(n^2)
-
-export const twoSum = (
-  nums: number[],
-  target: number
-): number[] | undefined => {
+const twoSumSlow = (nums: number[], target: number): number[] | undefined => {
   for (let i = 0; i < nums.length; i++) {
     for (let j = i + 1; j < nums.length; j++) {
       if (nums[i] + nums[j] === target) {
@@ -21,3 +16,7 @@ export const twoSum = (
     }
   }
 };
+
+// TODO: Make it less than O(n^2)
+
+export const twoSum = twoSumSlow;

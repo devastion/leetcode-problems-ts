@@ -1,6 +1,6 @@
 import { lengthOfLongestSubstring } from "./lengthOfLongestSubstring";
 
-describe("3. lengthOfLongestSubstring tests", () => {
+describe("3. Longest Substring Without Repeating Characters tests", () => {
   test("test case 1", () => {
     expect(lengthOfLongestSubstring("abcabcbb")).toBe(3);
   });

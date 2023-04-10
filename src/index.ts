@@ -1,1 +1,1 @@
-import "./5_longest_palindromic_substring/longestPalindrome";
+import "./643_maximum_average_subarray_I/findMaxAverage";

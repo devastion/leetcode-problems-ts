@@ -1,1 +1,1 @@
-import "./9_palindrome_number/isPalindrome";
+import "./5_longest_palindromic_substring/longestPalindrome";

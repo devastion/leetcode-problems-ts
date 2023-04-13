@@ -1,1 +1,1 @@
-import "./209_minimum_size_subarray_sum/minSubArrayLen";
+import "./169_majority_element/majorityElement";

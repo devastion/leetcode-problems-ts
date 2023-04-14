@@ -1,1 +1,1 @@
-import "./169_majority_element/majorityElement";
+import "./2_add_two_numbers/addTwoNumbers";

@@ -19,4 +19,13 @@ const twoSumSlow = (nums: number[], target: number): number[] | undefined => {
 
 // TODO: Make it less than O(n^2)
 
+const twoSumOptimized = (
+  nums: number[],
+  target: number
+): number[] | undefined => {
+  const hash = {};
+
+  return [0, 1];
+};
+
 export const twoSum = twoSumSlow;

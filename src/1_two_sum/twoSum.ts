@@ -17,15 +17,28 @@ const twoSumSlow = (nums: number[], target: number): number[] | undefined => {
   }
 };
 
-// TODO: Make it less than O(n^2)
+// DONE: Make it less than O(n^2)
 
 const twoSumOptimized = (
   nums: number[],
   target: number
 ): number[] | undefined => {
-  const hash = {};
+  const hash: { [key: number]: number } = {};
 
-  return [0, 1];
+  for (let i = 0; i < nums.length; i++) {
+    let diff = target - nums[i];
+    if (hash.hasOwnProperty(diff) && hash[diff] !== i) {
+      return [hash[diff], i];
+    }
+
+    hash[nums[i]] = i;
+  }
+
+  return undefined;
 };
 
-export const twoSum = twoSumSlow;
+// console.log(twoSumOptimized([2, 7, 11, 15], 9)); // [0, 1]
+// console.log(twoSumOptimized([3, 2, 4], 6)); // [1, 2]
+// console.log(twoSumOptimized([3, 3], 6)); // [0, 1]
+
+export const twoSum = twoSumOptimized;

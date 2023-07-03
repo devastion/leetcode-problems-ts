@@ -1,1 +1,1 @@
-import "./2_add_two_numbers/addTwoNumbers";
+import "./1_two_sum/twoSum";

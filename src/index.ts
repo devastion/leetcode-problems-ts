@@ -1,1 +1,1 @@
-import "./238_product_of_array_except_self/productExceptSelf";
+import "./128_longest_consecutive_sequence/longestConsecutive";

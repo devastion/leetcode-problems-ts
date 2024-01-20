@@ -1,1 +1,1 @@
-import "./128_longest_consecutive_sequence/longestConsecutive";
+import "./125_valid_palindrome/validPalindrome";

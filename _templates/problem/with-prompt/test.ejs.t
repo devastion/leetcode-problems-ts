@@ -3,7 +3,7 @@ to: <%=`src/${foldername}/${name}`%>.test.ts
 ---
 import <%= `{ ${name} }` %> from "./<%=name%>";
 
-describe(<%=`${foldername}`%>, () => {
+describe("<%= foldername %>", () => {
   test("test case 1", () => {
     expect(<%=name%>()).toBe();
   });

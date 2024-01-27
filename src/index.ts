@@ -1,1 +1,1 @@
-import "./167_two_sum_II/twoSum";
+import "./15_3sum/threeSum";

@@ -1,1 +1,1 @@
-import "./155_min_stack/minStack";
+import "./167_two_sum_II/twoSum";

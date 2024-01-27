@@ -1,1 +1,1 @@
-import "./125_valid_palindrome/validPalindrome";
+import "./155_min_stack/minStack";
